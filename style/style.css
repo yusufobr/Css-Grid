@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: aquamarine;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+
+    gap: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.container div {
+    padding: 10px;
+    border: 2px solid #000;
+    overflow-y: auto;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content-large {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    /* we can also use "grid-row-end: 4" */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.footer {
+    /* we can use / or 
+    grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 / span 3;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h4 {
+    
+    
+}
